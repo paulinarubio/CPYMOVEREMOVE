@@ -11,8 +11,15 @@
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+    char buffer;
+    int sourcef, targetf, n;
+    
+    while((n=read(sourcef,&buffer,1))!=0){
+        write(targetf,&buffer,1);
+        
 }
+    close(sourcef);
+    close(targetf);
 
+return 0;
+}
